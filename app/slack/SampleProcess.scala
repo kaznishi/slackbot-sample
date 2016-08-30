@@ -8,6 +8,7 @@ import slack.SlackUtil
 import slack.rtm.SlackRtmClient
 
 import scala.concurrent.duration._
+import com.typesafe.config.ConfigFactory
 
 
 /**
@@ -19,7 +20,9 @@ object SampleProcess extends BaseProcess
   with App {
 
   startProcess {
-    val token = "..."
+    val conf = ConfigFactory.load()
+    val token = conf.getString("slack.token")
+
     implicit val system = ActorSystem("slack")
     implicit val ec = system.dispatcher
 
