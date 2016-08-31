@@ -1,6 +1,7 @@
 package controllers
 
 import javax.inject._
+
 import play.api._
 import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits._
@@ -19,6 +20,7 @@ class HomeController @Inject() extends Controller {
    * a path of `/`.
    */
   def index = Action {
+
 
 //    import datalayer.cache.MemcachedApi
 //    val hoge = MemcachedApi
