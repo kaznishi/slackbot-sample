@@ -3,6 +3,7 @@ package controllers
 import javax.inject._
 import play.api._
 import play.api.mvc._
+import play.api.libs.concurrent.Execution.Implicits._
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -18,6 +19,15 @@ class HomeController @Inject() extends Controller {
    * a path of `/`.
    */
   def index = Action {
+
+//    import datalayer.dao._
+//    val samples = SamplesDAO
+//    val hogehoge = samples.findAll
+//    hogehoge.map(r => {
+//      println("fuga")
+//      println(r)
+//    })
+//    println("hogehogehogheo")
 
 //    import shade.memcached._
 //    import scala.concurrent.ExecutionContext.Implicits.global

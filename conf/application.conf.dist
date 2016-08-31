@@ -352,8 +352,12 @@ db {
   #default.logSql=true
 }
 
+slick.dbs.default.driver="slick.driver.MySQLDriver$"
+slick.dbs.default.db.driver="com.mysql.jdbc.Driver"
+slick.dbs.default.db.url="jdbc:mysql://localhost:3306/yourdb"
+slick.dbs.default.db.user="your user"
+slick.dbs.default.db.password="your pass"
+slick.dbs.default.db.connectionTimeout = 10 second
+
 # replace with your slack token
 slack.token = "xoxb-xxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxx" 
-
-
-
