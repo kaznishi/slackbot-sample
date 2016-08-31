@@ -20,6 +20,12 @@ class HomeController @Inject() extends Controller {
    */
   def index = Action {
 
+//    import datalayer.cache.MemcachedApi
+//    val hoge = MemcachedApi
+//    hoge.set[String]("hogehoge", "fugafuga")
+//    hoge.get[String]("hogehoge").map(println(_))
+
+
 //    import datalayer.dao._
 //    val samples = SamplesDAO
 //    val hogehoge = samples.findAll

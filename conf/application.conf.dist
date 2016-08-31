@@ -359,5 +359,9 @@ slick.dbs.default.db.user="your user"
 slick.dbs.default.db.password="your pass"
 slick.dbs.default.db.connectionTimeout = 10 second
 
+memcached.host="localhost:11211"
+memcached.namespace="hogeapp"
+memcached.duration=600
+
 # replace with your slack token
 slack.token = "xoxb-xxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxx" 
