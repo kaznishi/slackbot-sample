@@ -9,5 +9,10 @@ GET     /count                      controllers.CountController.count
 # An example controller showing how to write asynchronous code
 GET     /message                    controllers.AsyncController.message
 
+# dummy
+GET /yato-bot/user-info/by-email/:email controllers.DummyYatoController.userInfoByEmail(email: String)
+GET /yato-bot/point/by-email/:email controllers.DummyYatoController.availablePointByEmail(email: String)
+POST /yato-bot/give controllers.DummyYatoController.give
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
