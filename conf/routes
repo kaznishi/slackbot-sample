@@ -10,9 +10,9 @@ GET     /count                      controllers.CountController.count
 GET     /message                    controllers.AsyncController.message
 
 # dummy
-GET /yato-bot/user-info/by-email/:email controllers.DummyYatoController.userInfoByEmail(email: String)
-GET /yato-bot/point/by-email/:email controllers.DummyYatoController.availablePointByEmail(email: String)
-POST /yato-bot/give controllers.DummyYatoController.give
+GET /yato-bot-api/v1/user/info/ controllers.DummyYatoController.userInfoByEmail(email: String)
+GET /yato-bot-api/v1/user/point/ controllers.DummyYatoController.availablePointByEmail(email: String)
+POST /yato-bot-api/v1/admiration/post controllers.DummyYatoController.postAdmiration
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
