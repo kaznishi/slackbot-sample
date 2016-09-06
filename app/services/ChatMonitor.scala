@@ -1,3 +1,5 @@
 package services
 
-trait ChatMonitor
+trait ChatMonitor {
+  def onMessage(f: (Any) => Any): Unit
+}
