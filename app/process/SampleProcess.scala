@@ -1,4 +1,4 @@
-package job.process
+package process
 
 import play.libs.Akka
 import play.api.libs.concurrent.Execution.Implicits._
@@ -39,7 +39,7 @@ object SampleProcess extends BaseProcess
       println(mentionedIds)
 
       if(mentionedIds.contains(selfId)) {
-//        client.sendMessage(message.channel, s"<@${message.user}>: Hey!Hey!")
+        //        client.sendMessage(message.channel, s"<@${message.user}>: Hey!Hey!")
 
         val atc1 = Attachment(color = Some("danger"), text = Some("hogehoge"))
         val atc2 = Attachment(color = Some("#7CD197"), text = Some("fugafuga"))

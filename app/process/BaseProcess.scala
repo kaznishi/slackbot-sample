@@ -1,4 +1,4 @@
-package job.process
+package process
 
 import scala.concurrent.Future
 
@@ -25,4 +25,3 @@ trait BaseProcess {
   }
 
 }
-
