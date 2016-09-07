@@ -5,6 +5,8 @@ import entities.{BotAction, Message}
 class ActionDecideService {
 
   def run(message: Message): Option[BotAction] = {
+    println("action decide service")
+    println(message)
     message.body match {
       case "hi" => Some(YatoBotScenario1hiAction)
       case "hey" => Some(YatoBotScenario1heyAction)

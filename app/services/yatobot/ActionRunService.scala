@@ -7,6 +7,8 @@ import scala.concurrent.Future
 class ActionRunService {
 
   def run(optAction: Option[BotAction]): Future[Option[BotResponse]] = {
+    println("action run service")
+    println(optAction)
     optAction match {
       case Some(action) => action match {
         case YatoBotScenario1hiAction => Scenario1hiActionService.run
